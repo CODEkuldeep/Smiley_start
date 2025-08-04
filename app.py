@@ -1,3 +1,6 @@
+import os
+os.makedirs("saved_images", exist_ok=True)
+
 from flask import Flask, render_template, request, send_from_directory
 import cv2
 import base64
@@ -65,4 +68,4 @@ def send_image(filename):
 
 if __name__ == "__main__":
     os.makedirs("saved_images", exist_ok=True)
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
