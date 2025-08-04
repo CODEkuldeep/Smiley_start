@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmileyStart</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script defer src="/static/script.js"></script>
+  </head>
+  <body>
+    <h1>Start Your Day with a Smile 😊</h1>
+
+    <!-- 🔹 Motivational message on page load -->
+    <p id="motivation"></p>
+
+    <!-- 🔹 Live webcam video -->
+    <video id="video" width="640" height="480" autoplay></video>
+
+    <!-- 🔹 Capture button -->
+    <br />
+    <button id="snap">Capture Smile</button>
+
+    <!-- 🔹 Canvas used to capture the image -->
+    <canvas id="canvas" width="640" height="480" style="display: none"></canvas>
+
+    <!-- 🔹 Smile detection result -->
+    <p id="result"></p>
+  </body>
+</html>
